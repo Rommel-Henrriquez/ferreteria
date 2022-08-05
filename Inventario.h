@@ -47,3 +47,6 @@ Articulo pala(300.12, 16, "Pala truper", UNIDAD);
 Articulo azadon(155.17, 12, "Azadon de 110 cm con mango", UNIDAD);
 Articulo machete(88.19, 6, "Machete truper", UNIDAD);
 Articulo Jardineria[4] = {pico, pala, azadon, machete};
+
+//Otros
+//Pinturas
