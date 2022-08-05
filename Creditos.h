@@ -1,1 +1,1 @@
-void creditos()
+void creditos() { cout << "Creditos" << endl; }
