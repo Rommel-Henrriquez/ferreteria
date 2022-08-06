@@ -54,6 +54,7 @@ int main() {
 
         break;
       case 7:
+        creditos();
         // Funión para mostrar los créditos.
         break;
 
