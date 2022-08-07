@@ -18,9 +18,9 @@ void jugarPega3() {
     cin >> nivel;
     switch (nivel) {
       case 1:
-        a = 1 + rand() % 4;
-        b = 1 + rand() % 4;
-        c = 1 + rand() % 4;
+        a = 1 + rand() % 3;
+        b = 1 + rand() % 3;
+        c = 1 + rand() % 3;
 
         cout << "DIFICULTAD FACIL, ELIJE TRES NUMEROS DEL 1 AL 3, SUERTE"
              << endl
@@ -31,6 +31,7 @@ void jugarPega3() {
         cin >> b2;
         cout << "Digite su tercer numero: ";
         cin >> c3;
+        cout << "Los numeros son: " << a << ", " << b << " y " << c << endl;
         if (a1 == a && b2 == b && c3 == c) {
           cout << "Felicidades, Has ganado" << endl;
         } else
@@ -38,9 +39,9 @@ void jugarPega3() {
         break;
 
       case 2:
-        a = 1 + rand() % 7;
-        b = 1 + rand() % 7;
-        c = 1 + rand() % 7;
+        a = 1 + rand() % 6;
+        b = 1 + rand() % 6;
+        c = 1 + rand() % 6;
         cout << "DIFICULTAD MEDIA, ELIJE TRES NUMEROS DEL 1 AL 6, SUERTE ;)"
              << endl
              << endl;
@@ -50,15 +51,17 @@ void jugarPega3() {
         cin >> b2;
         cout << "Digite su tercer numero: ";
         cin >> c3;
+        cout << "Los numeros son: " << a << ", " << b << " y " << c << endl;
+
         if (a1 == a && b2 == b && c3 == c) {
           cout << "Felicidades, Has ganado" << endl;
         } else
           cout << "Ups, has perdido" << endl;
         break;
       case 3:
-        a = 1 + rand() % 11;
-        b = 1 + rand() % 11;
-        c = 1 + rand() % 11;
+        a = 1 + rand() % 10;
+        b = 1 + rand() % 10;
+        c = 1 + rand() % 10;
         cout << "DIFICULTAD DIFICIL, ELIJE TRES NUMEROS DEL 1 AL 10, SUERTE ;)"
              << endl
              << endl;
@@ -68,13 +71,15 @@ void jugarPega3() {
         cin >> b2;
         cout << "Digite su tercer numero: ";
         cin >> c3;
+        cout << "Los numeros son: " << a << ", " << b << " y " << c << endl;
+
         if (a1 == a && b2 == b && c3 == c) {
           cout << "Felicidades, Has ganado" << endl;
         } else
           cout << "Ups, has perdido" << endl;
         break;
       case 4:
-        cout << "Gracias por jugar ;)";
+        cout << "Gracias por jugar ;)" << endl;
         break;
       default:
         cout << "Ha puesto un valor incorrecto." << endl;

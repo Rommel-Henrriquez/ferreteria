@@ -85,8 +85,7 @@ void Ventas() {
       break;
     case 7:
       cout << "Aqui va la categoria otros: pero alguien no la ha puesto"
-           << endl;
-      // mostrarCategoria(Otros, "Otros");
+
       break;
     default:
       cout << "Opcion invalida :(" << endl;

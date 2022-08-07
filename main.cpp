@@ -2,12 +2,12 @@
 #include <string>
 // 💡 Los archivos extra deben ser con extensión ".h"
 #include "Articulo.h"
+#include "Creditos.h"
 #include "Inventario.h"
 #include "Menu.h"
+#include "Mostrar.h"
 #include "Pega3.h"
 #include "Ventas.h"
-#include "Mostrar.h"
-#include "Creditos.h"
 
 using namespace std;
 int main() {
@@ -31,6 +31,7 @@ int main() {
         mostrarPrecios(Electricidad, "Electricidad");
         mostrarPrecios(Hogar, "Hogar");
         mostrarPrecios(Jardineria, "Jardineria");
+        mostrarPrecios(Otros, "Otros");
         break;
 
       case 3:
@@ -40,6 +41,7 @@ int main() {
         mostrarArticulos(Electricidad, "Electricidad");
         mostrarArticulos(Hogar, "Hogar");
         mostrarArticulos(Jardineria, "Jardineria");
+        mostrarArticulos(Otros, "Otros");
         break;
 
       case 4:
