@@ -9,6 +9,7 @@
 #include "Mostrar.h"
 #include "Pega3.h"
 #include "Ventas.h"
+#include "Ventas-X-Producto.h"
 
 using namespace std;
 int main() {
@@ -47,9 +48,8 @@ int main() {
         break;
 
       case 4:
-        // Función de ventas por produto.
+        VentasxProducto();
         break;
-
       case 5:
         // Función para el total de ventas de detalle.
         break;
