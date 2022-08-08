@@ -8,8 +8,8 @@
 #include "Menu.h"
 #include "Mostrar.h"
 #include "Pega3.h"
-#include "Ventas.h"
 #include "Ventas-X-Producto.h"
+#include "Ventas.h"
 
 using namespace std;
 int main() {

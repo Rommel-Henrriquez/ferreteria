@@ -6,12 +6,11 @@
  * @param cantidad la cantidad del producto que el usuario quiere comprar
  */
 void venderArticulo(int& producto, int& cantidad) {
-  cout << "Que producto va  acomprar?: ";
+  cout << "Que producto va a comprar?: ";
   cin >> producto;
   if (producto >= 1 && producto <= 4) {
-    cout << "Cuantos va  a comprar?: ";
+    cout << "Cuantos va a comprar?: ";
     cin >> cantidad;
-
   } else {
     cout << "Ha puesto un numero invalido ;(" << endl;
   }
@@ -35,6 +34,7 @@ void mostrarCategoria(Articulo* arrayCategoria, string nombreCategoria) {
       cout << endl << "----------- Factura -----------" << endl;
       cout << cantidad << "x " << arrayCategoria[producto - 1].nombre << " - "
            << arrayCategoria[producto - 1].precio * cantidad << endl;
+      arrayCategoria[producto - 1].cantidadVendida += cantidad;
       cout << "Se ha realizado su compra ;)" << endl;
     }
   } else {
@@ -45,6 +45,15 @@ void mostrarCategoria(Articulo* arrayCategoria, string nombreCategoria) {
     cin >> deseaComprarMax;
 
     if (deseaComprarMax == 1) {
+      arrayCategoria[producto - 1].cantidadVendida =
+          arrayCategoria[producto - 1].cantidad;
+
+      cout << endl << "----------- Factura -----------" << endl;
+      cout << arrayCategoria[producto - 1].cantidad << "x "
+           << arrayCategoria[producto - 1].nombre << " - "
+           << arrayCategoria[producto - 1].precio *
+                  arrayCategoria[producto - 1].cantidad
+           << endl;
       arrayCategoria[producto - 1].cantidad = 0;
       cout << "Se a realizado su compra :)" << endl;
     } else if (deseaComprarMax == 2) {

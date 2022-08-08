@@ -1,21 +1,20 @@
-#include<iostream>
 using namespace std;
 
 void MostrarVentasxProducto(Articulo* arrayCategoria, string nombreCategoria) {
   int producto, cantidad = 0;
   cout << nombreCategoria << endl;
   for (int i = 0; i < 4; i++) {
-    if (!(arrayCategoria[i].cantidad == 0)) {
-      cout << i + 1 << ". Nombre: " << arrayCategoria[i].nombre << endl;
-      cout << "Unidades disponibles: " << arrayCategoria[i].cantidad << endl;
-      cout << "Unidades vendidas: " << arrayCategoria[i].cantidadVendida << endl;
-      cout << "Precio por unidad: " << arrayCategoria[i].precio << endl; 
-      cout<<"Total vendido de este producto es: "<<arrayCategoria[i].cantidadVendida * arrayCategoria[i].precio<<endl<< endl;;
-    }
+    cout << i + 1 << ". Nombre: " << arrayCategoria[i].nombre << endl;
+    cout << "Unidades disponibles: " << arrayCategoria[i].cantidad << endl;
+    cout << "Unidades vendidas: " << arrayCategoria[i].cantidadVendida << endl;
+    cout << "Precio por unidad: " << arrayCategoria[i].precio << endl;
+    cout << "Total vendido de este producto es: "
+         << arrayCategoria[i].cantidadVendida * arrayCategoria[i].precio << endl
+         << endl;
   }
   cout << endl;
 }
-void VentasxProducto(){
+void VentasxProducto() {
   int categoria;
   cout << "-------> Categorias <-------" << endl;
   cout << "1.Herramientas." << endl;
@@ -29,30 +28,27 @@ void VentasxProducto(){
   cin >> categoria;
   switch (categoria) {
     case 1:
-      mostrarCategoria(Herramientas, "Herramientas");
+      MostrarVentasxProducto(Herramientas, "Herramientas");
       break;
     case 2:
-      mostrarCategoria(Fontaneria, "Fontaneria");
+      MostrarVentasxProducto(Fontaneria, "Fontaneria");
       break;
     case 3:
-      mostrarCategoria(Construccion, "Construccion");
+      MostrarVentasxProducto(Construccion, "Construccion");
       break;
     case 4:
-      mostrarCategoria(Electricidad, "Electricidad");
+      MostrarVentasxProducto(Electricidad, "Electricidad");
       break;
     case 5:
-      mostrarCategoria(Hogar, "Hogar");
+      MostrarVentasxProducto(Hogar, "Hogar");
       break;
     case 6:
-      mostrarCategoria(Jardineria, "Jardineria");
+      MostrarVentasxProducto(Jardineria, "Jardineria");
       break;
     case 7:
-      mostrarCategoria(Otros, "Otros");
+      MostrarVentasxProducto(Otros, "Otros");
       break;
     default:
       cout << "Opcion invalida :(" << endl;
   }
 }
-
-
-    
