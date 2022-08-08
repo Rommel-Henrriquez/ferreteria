@@ -32,6 +32,9 @@ void mostrarCategoria(Articulo* arrayCategoria, string nombreCategoria) {
   if (cantidad <= arrayCategoria[producto - 1].cantidad) {
     arrayCategoria[producto - 1].cantidad -= cantidad;
     if (producto >= 1 && producto <= 4) {
+      cout << endl << "----------- Factura -----------" << endl;
+      cout << cantidad << "x " << arrayCategoria[producto - 1].nombre << " - "
+           << arrayCategoria[producto - 1].precio * cantidad << endl;
       cout << "Se ha realizado su compra ;)" << endl;
     }
   } else {
@@ -40,6 +43,7 @@ void mostrarCategoria(Articulo* arrayCategoria, string nombreCategoria) {
          << arrayCategoria[producto - 1].cantidad << endl;
     cout << "Desea comprarlo?(1 para si, 2 para no.): ";
     cin >> deseaComprarMax;
+
     if (deseaComprarMax == 1) {
       arrayCategoria[producto - 1].cantidad = 0;
       cout << "Se a realizado su compra :)" << endl;
@@ -51,8 +55,9 @@ void mostrarCategoria(Articulo* arrayCategoria, string nombreCategoria) {
     }
   }
 }
+
 void Ventas() {
-  int categoria, producto, cantidad = 0;
+  int categoria;
   cout << "Categorias: " << endl;
   cout << "1.Herramientas." << endl;
   cout << "2.Fontaneria." << endl;
@@ -66,7 +71,6 @@ void Ventas() {
   switch (categoria) {
     case 1:
       mostrarCategoria(Herramientas, "Herramientas");
-
       break;
     case 2:
       mostrarCategoria(Fontaneria, "Fontaneria");
@@ -84,11 +88,9 @@ void Ventas() {
       mostrarCategoria(Jardineria, "Jardineria");
       break;
     case 7:
-      cout << "Aqui va la categoria otros: pero alguien no la ha puesto"
-
+      mostrarCategoria(Otros, "Otros");
       break;
     default:
       cout << "Opcion invalida :(" << endl;
   }
 }
-

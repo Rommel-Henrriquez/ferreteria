@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 // 💡 Los archivos extra deben ser con extensión ".h"
+
 #include "Articulo.h"
 #include "Creditos.h"
 #include "Inventario.h"
@@ -12,6 +13,7 @@
 using namespace std;
 int main() {
   int opcion = 0;
+
   do {
     // Mostramos las instrucciones
     mostrarMenu();
@@ -53,7 +55,6 @@ int main() {
         break;
       case 6:
         jugarPega3();
-
         break;
       case 7:
         creditos();
