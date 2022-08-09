@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-// 💡 Los archivos extra deben ser con extensión ".h"
 
+// 💡 Los archivos extra deben ser con extensión ".h"
 #include "Articulo.h"
 #include "Creditos.h"
 #include "Inventario.h"
@@ -12,6 +12,7 @@
 #include "Ventas.h"
 
 using namespace std;
+
 int main() {
   int opcion = 0;
 

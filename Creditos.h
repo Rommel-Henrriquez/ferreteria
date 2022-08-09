@@ -1,5 +1,5 @@
-void creditos() { 
-  cout << "*****Creditos*****" << endl; 
+void creditos() {
+  cout << endl << "*****Creditos*****" << endl;
   cout << endl;
   cout << "Ricardo Alberto Corrales Montoya - 20202000211" << endl;
   cout << "Olman Jared Mejia Reyes - 20192002892" << endl;

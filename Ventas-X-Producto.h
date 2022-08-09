@@ -1,5 +1,3 @@
-using namespace std;
-
 void MostrarVentasxProducto(Articulo* arrayCategoria, string nombreCategoria) {
   int producto, cantidad = 0;
   cout << nombreCategoria << endl;
@@ -14,6 +12,7 @@ void MostrarVentasxProducto(Articulo* arrayCategoria, string nombreCategoria) {
   }
   cout << endl;
 }
+
 void VentasxProducto() {
   int categoria;
   cout << "-------> Categorias <-------" << endl;
@@ -26,6 +25,7 @@ void VentasxProducto() {
   cout << "7.Otros." << endl;
   cout << "Que categoria desea consultar?: ";
   cin >> categoria;
+
   switch (categoria) {
     case 1:
       MostrarVentasxProducto(Herramientas, "Herramientas");
