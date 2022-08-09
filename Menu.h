@@ -3,6 +3,7 @@ using namespace std;
 
 void mostrarMenu() {
   cout << endl;
+  cout << "-------> Menu <-------" << endl;
   cout << "1. Vender articulo." << endl;
   cout << "2. Consulta de precios." << endl;
   cout << "3. Ver inventario." << endl;
@@ -10,5 +11,4 @@ void mostrarMenu() {
   cout << "5. Total ventas detalle." << endl;
   cout << "6. Juego pega 3." << endl;
   cout << "7. Salir. " << endl;
-  cout << endl;
 };
